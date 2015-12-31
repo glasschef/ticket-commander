@@ -1,0 +1,17 @@
+
+<div id="container">
+
+
+<hr style="color: red; height: 5px;background-color: #f00;width:100%;position:absolute;  left:0; top:110px;"> </hr>
+    <div id="{{ticket.id}}" ng-repeat="ticket in search.results" style ="position:absolute;  top:{{(analyze(ticket).timeLeft/800000) + 80}}px; left:{{getColumn(50)}}px;">
+
+      <div title="{{analyze(ticket).timeLeft/1000/60}}" class="{{analyze(ticket).supportLevel}} {{analyze(ticket).ticketSeverity}} none ticket">
+         <span style=""> <p> <i class="tiny mdi-action-label" style=""><a href="http://getchef.zendesk.com/agent/tickets/{{ticket.id}}">{{ticket.id}}</i></a></p></span>         <span class="white-text">
+
+
+        </span>
+      </div>
+
+    </div>
+
+</div>

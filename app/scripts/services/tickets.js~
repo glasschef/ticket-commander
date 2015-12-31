@@ -1,0 +1,23 @@
+'use strict';
+
+/**
+ * @ngdoc service
+ * @name ticketCommanderApp.Tickets
+ * @description
+ * # Tickets
+ * Factory in the ticketCommanderApp.
+ */
+angular.module('ticketCommanderApp')
+  .factory('Tickets', function () {
+    // Service logic
+    // ...
+
+    var meaningOfLife = 42;
+
+    // Public API here
+    return {
+      someMethod: function () {
+        return meaningOfLife;
+      }
+    };
+  });
