@@ -20,6 +20,8 @@ $scope.untilSLA = function(time){
     return timeleft;
   }
 
+$scope.Math = window.Math;
+
 
   $scope.analyze = function(ticket){
       var timeSinceUpdate = new Date() - Date.parse(ticket.updated_at);
