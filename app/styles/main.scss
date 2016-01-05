@@ -31,12 +31,15 @@ body {
 
 .none {
   border-color: #333333;
+  color: #333333;
 }
 .standard {
   border-color: #CCCCCC;
+  color: #CCCCCC;
 }
 .premium {
   border-color: gold;
+  color: gold;
 }
 .severity_4 {
   color: green;
@@ -57,11 +60,16 @@ body {
   border-width: 2px;
   margin: 5px;
 }
-
+.arrow {
+       width: 0; 
+       height: 0; 
+       border-top: 10px solid transparent;
+       border-bottom: 10px solid transparent; 
+       
+       border-right:10px solid; 
+}
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 0px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -74,19 +82,17 @@ body {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+
 }
 
 .container-narrow > hr {
-  margin: 0px 0;
+
+
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
 
   .btn {
     font-size: 21px;
@@ -113,8 +119,7 @@ body {
   .header,
   .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+
   }
   /* Space out the masthead */
   .header {

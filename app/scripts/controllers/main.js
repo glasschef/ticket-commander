@@ -10,7 +10,10 @@
 angular.module('ticketCommanderApp')
     .controller('MainCtrl', ['$scope','Tickets', function ($scope, Tickets) {
 
-  $scope.search_string = "type:ticket status:open assignee:glass@getchef.com";
+		//$scope.search_string = "7720";
+		$scope.search_string = "type:ticket status:open assignee:glass@getchef.com";
+		//$scope.search_string = 'type:ticket status:new group:Support';
+		
   $scope.search = Tickets.search($scope.search_string).query();
   
   $scope.date = new Date();

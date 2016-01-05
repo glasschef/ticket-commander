@@ -21,7 +21,7 @@ angular.module('ticketCommanderApp')
         return "test";
       },
       search: function (search_string) {
-	    return $resource('http://192.168.0.137:3000/search.json', {}, {
+	    return $resource('http://0.0.0.0:3000/search.json', {}, {
               query: {
                   method:'GET',
                   headers: {'Authorization': "Basic " + Base64.encode(email + "/token:"+token)},
@@ -31,7 +31,7 @@ angular.module('ticketCommanderApp')
               });
       },
       getTicket: function (ticketId) {
-	    return $resource('http://192.168.0.137:3000/tickets/:id.json', {}, {
+	    return $resource('http://0.0.0.0:3000/tickets/:id.json', {}, {
                 id: "@id",
                 query: {
                     method:'GET',
