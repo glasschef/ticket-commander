@@ -23,9 +23,9 @@ a:hover {
 a:active {
     color: red;
     }
-    
+
 body {
-  background-color: #404040;
+  background-color: #333333;
   padding: 0;
 }
 
@@ -57,11 +57,63 @@ body {
   border-width: 2px;
   margin: 5px;
 }
+.missile {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+box-shadow: 9px 3px 0 ,6px 6px 0 ,9px 6px 0 ,12px 6px 0 ,3px 9px 0 ,6px 9px 0 ,9px 9px 0 ,12px 9px 0 ,15px 9px 0 ,6px 12px 0 ,9px 12px 0 ,12px 12px 0 ,9px 15px 0 ;
+}
+.ground {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;   /* Height of the footer */
+  background: yellow;
+  color: blue;
+}
+.silo {
+  content: '';
+  border: none;
+  	display: block;
+  	width: 3px;
+  	height: 3px;
+  	background: transparent;
+    box-shadow:0px 12px #0011ff,0px 9px #0011ff,3px 9px #0011ff,3px 3px #0011ff,3px 3px #0011ff,3px 6px #0011ff,6px 9px #0011ff,6px 12px #0011ff;
+}
+.bunkerleft {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 45px 3px 0 #FFFF00,48px 3px 0 #FFFF00,42px 6px 0 #FFFF00,45px 6px 0 #FFFF00,48px 6px 0 #FFFF00,51px 6px 0 #FFFF00,39px 9px 0 #FFFF00,42px 9px 0 #FFFF00,45px 9px 0 #FFFF00,48px 9px 0 #FFFF00,51px 9px 0 #FFFF00,54px 9px 0 #FFFF00,36px 12px 0 #FFFF00,39px 12px 0 #FFFF00,42px 12px 0 #FFFF00,45px 12px 0 #FFFF00,48px 12px 0 #FFFF00,51px 12px 0 #FFFF00,54px 12px 0 #FFFF00,57px 12px 0 #FFFF00,60px 12px 0 #FFFF00,33px 15px 0 #FFFF00,36px 15px 0 #FFFF00,39px 15px 0 #FFFF00,42px 15px 0 #FFFF00,45px 15px 0 #FFFF00,48px 15px 0 #FFFF00,51px 15px 0 #FFFF00,54px 15px 0 #FFFF00,57px 15px 0 #FFFF00,60px 15px 0 #FFFF00,30px 18px 0 #FFFF00,33px 18px 0 #FFFF00,36px 18px 0 #FFFF00,39px 18px 0 #FFFF00,42px 18px 0 #FFFF00,45px 18px 0 #FFFF00,48px 18px 0 #FFFF00,51px 18px 0 #FFFF00,54px 18px 0 #FFFF00,57px 18px 0 #FFFF00,60px 18px 0 #FFFF00,24px 21px 0 #FFFF00,27px 21px 0 #FFFF00,30px 21px 0 #FFFF00,33px 21px 0 #FFFF00,36px 21px 0 #FFFF00,39px 21px 0 #FFFF00,42px 21px 0 #FFFF00,45px 21px 0 #FFFF00,48px 21px 0 #FFFF00,51px 21px 0 #FFFF00,54px 21px 0 #FFFF00,57px 21px 0 #FFFF00,60px 21px 0 #FFFF00,21px 24px 0 #FFFF00,24px 24px 0 #FFFF00,27px 24px 0 #FFFF00,30px 24px 0 #FFFF00,33px 24px 0 #FFFF00,36px 24px 0 #FFFF00,39px 24px 0 #FFFF00,42px 24px 0 #FFFF00,45px 24px 0 #FFFF00,48px 24px 0 #FFFF00,51px 24px 0 #FFFF00,54px 24px 0 #FFFF00,57px 24px 0 #FFFF00,60px 24px 0 #FFFF00,18px 27px 0 #FFFF00,21px 27px 0 #FFFF00,24px 27px 0 #FFFF00,27px 27px 0 #FFFF00,30px 27px 0 #FFFF00,33px 27px 0 #FFFF00,36px 27px 0 #FFFF00,39px 27px 0 #FFFF00,42px 27px 0 #FFFF00,45px 27px 0 #FFFF00,48px 27px 0 #FFFF00,51px 27px 0 #FFFF00,54px 27px 0 #FFFF00,57px 27px 0 #FFFF00,60px 27px 0 #FFFF00,15px 30px 0 #FFFF00,18px 30px 0 #FFFF00,21px 30px 0 #FFFF00,24px 30px 0 #FFFF00,27px 30px 0 #FFFF00,30px 30px 0 #FFFF00,33px 30px 0 #FFFF00,36px 30px 0 #FFFF00,39px 30px 0 #FFFF00,42px 30px 0 #FFFF00,45px 30px 0 #FFFF00,48px 30px 0 #FFFF00,51px 30px 0 #FFFF00,54px 30px 0 #FFFF00,57px 30px 0 #FFFF00,60px 30px 0 #FFFF00,9px 33px 0 #FFFF00,12px 33px 0 #FFFF00,15px 33px 0 #FFFF00,18px 33px 0 #FFFF00,21px 33px 0 #FFFF00,24px 33px 0 #FFFF00,27px 33px 0 #FFFF00,30px 33px 0 #FFFF00,33px 33px 0 #FFFF00,36px 33px 0 #FFFF00,39px 33px 0 #FFFF00,42px 33px 0 #FFFF00,45px 33px 0 #FFFF00,48px 33px 0 #FFFF00,51px 33px 0 #FFFF00,54px 33px 0 #FFFF00,57px 33px 0 #FFFF00,60px 33px 0 #FFFF00,6px 36px 0 #FFFF00,9px 36px 0 #FFFF00,12px 36px 0 #FFFF00,15px 36px 0 #FFFF00,18px 36px 0 #FFFF00,21px 36px 0 #FFFF00,24px 36px 0 #FFFF00,27px 36px 0 #FFFF00,30px 36px 0 #FFFF00,33px 36px 0 #FFFF00,36px 36px 0 #FFFF00,39px 36px 0 #FFFF00,42px 36px 0 #FFFF00,45px 36px 0 #FFFF00,48px 36px 0 #FFFF00,51px 36px 0 #FFFF00,54px 36px 0 #FFFF00,57px 36px 0 #FFFF00,60px 36px 0 #FFFF00,3px 39px 0 #FFFF00,6px 39px 0 #FFFF00,9px 39px 0 #FFFF00,12px 39px 0 #FFFF00,15px 39px 0 #FFFF00,18px 39px 0 #FFFF00,21px 39px 0 #FFFF00,24px 39px 0 #FFFF00,27px 39px 0 #FFFF00,30px 39px 0 #FFFF00,33px 39px 0 #FFFF00,36px 39px 0 #FFFF00,39px 39px 0 #FFFF00,42px 39px 0 #FFFF00,45px 39px 0 #FFFF00,48px 39px 0 #FFFF00,51px 39px 0 #FFFF00,54px 39px 0 #FFFF00,57px 39px 0 #FFFF00,60px 39px 0 #FFFF00;
+}
+.bunkerright {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 15px 3px 0 #FFFF00,18px 3px 0 #FFFF00,12px 6px 0 #FFFF00,15px 6px 0 #FFFF00,18px 6px 0 #FFFF00,21px 6px 0 #FFFF00,9px 9px 0 #FFFF00,12px 9px 0 #FFFF00,15px 9px 0 #FFFF00,18px 9px 0 #FFFF00,21px 9px 0 #FFFF00,24px 9px 0 #FFFF00,3px 12px 0 #FFFF00,6px 12px 0 #FFFF00,9px 12px 0 #FFFF00,12px 12px 0 #FFFF00,15px 12px 0 #FFFF00,18px 12px 0 #FFFF00,21px 12px 0 #FFFF00,24px 12px 0 #FFFF00,27px 12px 0 #FFFF00,3px 15px 0 #FFFF00,6px 15px 0 #FFFF00,9px 15px 0 #FFFF00,12px 15px 0 #FFFF00,15px 15px 0 #FFFF00,18px 15px 0 #FFFF00,21px 15px 0 #FFFF00,24px 15px 0 #FFFF00,27px 15px 0 #FFFF00,30px 15px 0 #FFFF00,33px 15px 0 #FFFF00,3px 18px 0 #FFFF00,6px 18px 0 #FFFF00,9px 18px 0 #FFFF00,12px 18px 0 #FFFF00,15px 18px 0 #FFFF00,18px 18px 0 #FFFF00,21px 18px 0 #FFFF00,24px 18px 0 #FFFF00,27px 18px 0 #FFFF00,30px 18px 0 #FFFF00,33px 18px 0 #FFFF00,36px 18px 0 #FFFF00,3px 21px 0 #FFFF00,6px 21px 0 #FFFF00,9px 21px 0 #FFFF00,12px 21px 0 #FFFF00,15px 21px 0 #FFFF00,18px 21px 0 #FFFF00,21px 21px 0 #FFFF00,24px 21px 0 #FFFF00,27px 21px 0 #FFFF00,30px 21px 0 #FFFF00,33px 21px 0 #FFFF00,36px 21px 0 #FFFF00,39px 21px 0 #FFFF00,3px 24px 0 #FFFF00,6px 24px 0 #FFFF00,9px 24px 0 #FFFF00,12px 24px 0 #FFFF00,15px 24px 0 #FFFF00,18px 24px 0 #FFFF00,21px 24px 0 #FFFF00,24px 24px 0 #FFFF00,27px 24px 0 #FFFF00,30px 24px 0 #FFFF00,33px 24px 0 #FFFF00,36px 24px 0 #FFFF00,39px 24px 0 #FFFF00,42px 24px 0 #FFFF00,45px 24px 0 #FFFF00,3px 27px 0 #FFFF00,6px 27px 0 #FFFF00,9px 27px 0 #FFFF00,12px 27px 0 #FFFF00,15px 27px 0 #FFFF00,18px 27px 0 #FFFF00,21px 27px 0 #FFFF00,24px 27px 0 #FFFF00,27px 27px 0 #FFFF00,30px 27px 0 #FFFF00,33px 27px 0 #FFFF00,36px 27px 0 #FFFF00,39px 27px 0 #FFFF00,42px 27px 0 #FFFF00,45px 27px 0 #FFFF00,48px 27px 0 #FFFF00,3px 30px 0 #FFFF00,6px 30px 0 #FFFF00,9px 30px 0 #FFFF00,12px 30px 0 #FFFF00,15px 30px 0 #FFFF00,18px 30px 0 #FFFF00,21px 30px 0 #FFFF00,24px 30px 0 #FFFF00,27px 30px 0 #FFFF00,30px 30px 0 #FFFF00,33px 30px 0 #FFFF00,36px 30px 0 #FFFF00,39px 30px 0 #FFFF00,42px 30px 0 #FFFF00,45px 30px 0 #FFFF00,48px 30px 0 #FFFF00,51px 30px 0 #FFFF00,3px 33px 0 #FFFF00,6px 33px 0 #FFFF00,9px 33px 0 #FFFF00,12px 33px 0 #FFFF00,15px 33px 0 #FFFF00,18px 33px 0 #FFFF00,21px 33px 0 #FFFF00,24px 33px 0 #FFFF00,27px 33px 0 #FFFF00,30px 33px 0 #FFFF00,33px 33px 0 #FFFF00,36px 33px 0 #FFFF00,39px 33px 0 #FFFF00,42px 33px 0 #FFFF00,45px 33px 0 #FFFF00,48px 33px 0 #FFFF00,51px 33px 0 #FFFF00,54px 33px 0 #FFFF00,3px 36px 0 #FFFF00,6px 36px 0 #FFFF00,9px 36px 0 #FFFF00,12px 36px 0 #FFFF00,15px 36px 0 #FFFF00,18px 36px 0 #FFFF00,21px 36px 0 #FFFF00,24px 36px 0 #FFFF00,27px 36px 0 #FFFF00,30px 36px 0 #FFFF00,33px 36px 0 #FFFF00,36px 36px 0 #FFFF00,39px 36px 0 #FFFF00,42px 36px 0 #FFFF00,45px 36px 0 #FFFF00,48px 36px 0 #FFFF00,51px 36px 0 #FFFF00,54px 36px 0 #FFFF00,57px 36px 0 #FFFF00,3px 39px 0 #FFFF00,6px 39px 0 #FFFF00,9px 39px 0 #FFFF00,12px 39px 0 #FFFF00,15px 39px 0 #FFFF00,18px 39px 0 #FFFF00,21px 39px 0 #FFFF00,24px 39px 0 #FFFF00,27px 39px 0 #FFFF00,30px 39px 0 #FFFF00,33px 39px 0 #FFFF00,36px 39px 0 #FFFF00,39px 39px 0 #FFFF00,42px 39px 0 #FFFF00,45px 39px 0 #FFFF00,48px 39px 0 #FFFF00,51px 39px 0 #FFFF00,54px 39px 0 #FFFF00,57px 39px 0 #FFFF00,60px 39px 0 #FFFF00;
+}
+.bunkermid {
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 3px 12px 0 #FFFF00,6px 12px 0 #FFFF00,9px 12px 0 #FFFF00,12px 12px 0 #FFFF00,15px 12px 0 #FFFF00,3px 15px 0 #FFFF00,6px 15px 0 #FFFF00,9px 15px 0 #FFFF00,12px 15px 0 #FFFF00,15px 15px 0 #FFFF00,3px 18px 0 #FFFF00,6px 18px 0 #FFFF00,9px 18px 0 #FFFF00,12px 18px 0 #FFFF00,15px 18px 0 #FFFF00,3px 21px 0 #FFFF00,6px 21px 0 #FFFF00,9px 21px 0 #FFFF00,12px 21px 0 #FFFF00,15px 21px 0 #FFFF00,3px 24px 0 #FFFF00,6px 24px 0 #FFFF00,9px 24px 0 #FFFF00,12px 24px 0 #FFFF00,15px 24px 0 #FFFF00,3px 27px 0 #FFFF00,6px 27px 0 #FFFF00,9px 27px 0 #FFFF00,12px 27px 0 #FFFF00,15px 27px 0 #FFFF00,3px 30px 0 #FFFF00,6px 30px 0 #FFFF00,9px 30px 0 #FFFF00,12px 30px 0 #FFFF00,15px 30px 0 #FFFF00,3px 33px 0 #FFFF00,6px 33px 0 #FFFF00,9px 33px 0 #FFFF00,12px 33px 0 #FFFF00,15px 33px 0 #FFFF00,3px 36px 0 #FFFF00,6px 36px 0 #FFFF00,9px 36px 0 #FFFF00,12px 36px 0 #FFFF00,15px 36px 0 #FFFF00,3px 39px 0 #FFFF00,6px 39px 0 #FFFF00,9px 39px 0 #FFFF00,12px 39px 0 #FFFF00,15px 39px 0 #FFFF00;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/* game style */
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 0px;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -107,6 +159,7 @@ body {
 @media screen and (min-width: 100%) {
   .container {
     position: relative;
+    margin: 0px;
   }
 
   /* Remove the padding we set earlier */

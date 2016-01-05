@@ -1,0 +1,54 @@
+<div id="container">
+
+
+    <div id="{{ticket.id}}" ng-repeat="ticket in search.results"
+    style ="position:absolute;  bottom:{{(analyze(ticket).timeLeft/(windowHeight*1000))}}px; left:{{getColumn(windowWidth/40)}}px;">
+
+      <div title="{{analyze(ticket).timeLeft/1000/60}}" class="{{analyze(ticket).supportLevel}} {{analyze(ticket).ticketSeverity}} none missile">
+     <a href="http://getchef.zendesk.com/agent/tickets/{{ticket.id}}" target="_blank">X </a>
+
+
+        </span>
+      </div>
+
+    </div>
+
+</div>
+
+<div class="ground" resize>
+
+
+<div id="all-silos" ng-repeat="x in [-1,0,1]" >
+
+
+  <div  class="bunkerleft" style ="position:absolute;top:-40px;left:{{(windowWidth/2-x*windowWidth/3)-43}}px;"  >
+  </div>
+
+      <div  class="bunkermid" style ="position:absolute;top:-40px;left:{{(windowWidth/2-x*windowWidth/3)+16}}px;"  >
+      </div>
+      <div  class="bunkermid" style ="position:absolute;top:-40px;left:{{(windowWidth/2-x*windowWidth/3)+31}}px;"  >
+      </div>
+
+
+    <div  class="bunkerright" style ="position:absolute;top:-40px;left:{{(windowWidth/2-x*windowWidth/3)+46}}px;"  >
+    </div>
+
+
+  <div id="bottomrow-silos" ng-repeat="i in [0,1,2,3]">
+    <div class="silo" style ="position:absolute;bottom:15px;left:{{i*20+(windowWidth/2-x*windowWidth/3)}}px;"
+    </div>
+  </div>
+  <div id="bottomrow-silos" ng-repeat="i in [0,1,2]">
+    <div class="silo" style ="position:absolute;bottom:25px;left:{{(i*20)+(windowWidth/2-x*windowWidth/3)+10}}px;"
+    </div>
+  </div>
+  <div id="bottomrow-silos" ng-repeat="i in [0,1]">
+    <div class="silo" style ="position:absolute;bottom:35px;left:{{(i*20)+(windowWidth/2-x*windowWidth/3)+20}}px;"
+    </div>
+  </div>
+  <div class="silo" style ="position:absolute;bottom:45px;left:{{(windowWidth/2-x*windowWidth/3)+30}}px;"
+  </div>
+
+
+</div>
+</div>
