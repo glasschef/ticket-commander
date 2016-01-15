@@ -10,7 +10,7 @@
 angular.module('ticketCommanderApp')
     .controller('GameCtrl', ['$scope','Tickets', function ($scope, Tickets) {
 
-  $scope.search_string = "type:ticket status:open ";
+  $scope.search_string = "type:ticket status:open assignee:glass@getchef.com";
   $scope.search = Tickets.search($scope.search_string).query();
 
   $scope.date = new Date();
@@ -23,8 +23,11 @@ $scope.untilSLA = function(time){
 
   $scope.analyze = function(ticket){
       var timeSinceUpdate = new Date() - Date.parse(ticket.updated_at);
-      var ticketSeverity = ticket.fields[5].value;
-      var supportLevel = ticket.fields[3].value;
+      
+      var ticketSeverity = $.grep(ticket.fields, function(e){ return e.id == '22476674'; })[0].value;
+      var supportLevel =  $.grep(ticket.fields, function(e){ return e.id == '22759000'; })[0].value;
+      var linkedIssue =  $.grep(ticket.fields, function(e){ return e.id == '24270646'; })[0].value;
+      
       var SLAtime = 0;
       switch(ticketSeverity){
         case "severity_1":

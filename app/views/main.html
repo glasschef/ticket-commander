@@ -1,18 +1,34 @@
 <div id="container">
 
+  <div style="color: darkred; height: 180px;background-color: hsl(0,100%,20%);width:100%;position:absolute;  left:0; top:0px; z-index: -3;   border-top: 0px;" > </div>
+  
+  <div style="color: red; height: 2px;background-color: hsl(0,100%,30%);width:100%;position:absolute;  left:0; top:180px; z-index: -3;   border-top: 3px;" > </div>
+  
+  <div ng-repeat="min in [0,180,360,540,720,900,1080,1260,1440,1620,1800,1980,2160,2340,2520,2700]">
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,30%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)}}px; z-index: 0;   border-top: 0px;" > {{Math.floor(min/60)}}h  {{ min % 60 }}m </div>
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,8%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)+30}}px; z-index: 0;   border-top: 0px;" >  </div>
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,15%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)+60}}px; z-index: 0;   border-top: 0px;" >  </div>
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,8%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)+90}}px; z-index: 0;   border-top: 0px;" >  </div>
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,15%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)+120}}px; z-index: 0;   border-top: 0px;" >  </div>
+    <div style="color: hsl({{min/10}},100%,50%); height: 1px;background-color: hsl({{min/10}},100%,8%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)+150}}px; z-index: 0;   border-top: 0px;" >  </div>
 
-<hr style="color: red; height: 5px;background-color: #f00;width:100%;position:absolute;  left:0; top:110px; z-index: -2;   border-top: 0px;" > </hr>
-    <div id="{{ticket.id}}" ng-repeat="ticket in search.results" style ="position:absolute;  top:{{Math.max((analyze(ticket).timeLeft/2500000),0)+110 }}px; left:{{getColumn(25)}}px; " >
+    
+    <div style="color: white; height: 100%;background-color:  hsl({{min/10}},100%,5%);width:100%;position:absolute;  left:0; top:{{180+(min*6000/5000)}}px; z-index: -3;   border-top: 0px;" > </div>
+  </div>
+
+  <div id="{{ticket.id}}" ng-repeat="ticket in search.results" style ="position:absolute;  top:{{Math.max((analyze(ticket).timeLeft/1000/60),-100)+180-23 }}px; left:{{getColumn(35)*80 }}px; " >
+
+    <div class="{{analyze(ticket).supportLevel}} arrow" style="position: absolute;  top: 50%;  transform: translateY(-50%); left:-7%" ></div>
+    <div title="{{analyze(ticket).timeLeft/1000/60}}" class="{{analyze(ticket).supportLevel}} {{analyze(ticket).ticketSeverity}} none ticket" style="position:right; border-style: solid; border-width: 1px; border-radius: 1px;">
       
-      <div class="{{analyze(ticket).supportLevel}} arrow" style="position: absolute;  top: 50%;  transform: translateY(-50%); left:-7%" ></div>
-      <div title="{{analyze(ticket).timeLeft/1000/60}}" class="{{analyze(ticket).supportLevel}} {{analyze(ticket).ticketSeverity}} none ticket" style="position:right; border-style: ridge;">
+      <span style=""> <p> <i class="tiny mdi-action-label" style=" z-index: 5;"><a href="http://getchef.zendesk.com/agent/tickets/{{ticket.id}}" target="_blank">{{ticket.id}}</i></a></p></span>         <span class="white-text">
+	
 
-         <span style=""> <p> <i class="tiny mdi-action-label" style=""><a href="http://getchef.zendesk.com/agent/tickets/{{ticket.id}}" target="_blank">{{ticket.id}}</i></a></p></span>         <span class="white-text">
-
-
-        </span>
-      </div>
-
+      </span>
     </div>
+    
+  </div>
+    {{ count   }}	
 
+  
 </div>
